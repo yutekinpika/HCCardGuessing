@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '16' # 必要に応じて Node.js のバージョンを変更
+        node-version: '18' # Node.js のバージョンを 18 に設定
 
     - name: Install dependencies
       run: npm install
