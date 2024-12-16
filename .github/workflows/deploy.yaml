@@ -24,6 +24,7 @@ jobs:
     - name: Build with environment variable
       run: |
         echo "VITE_APP_API_URL=${{ secrets.API_URL }}" > .env
+        cat .env  # .env ファイルの内容を出力
         npm run build
 
     - name: Deploy to GitHub Pages
