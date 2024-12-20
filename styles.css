@@ -45,13 +45,15 @@ button {
     margin: 10px 0;        /* 上下のマージンを設定 */
 }
 
+
 button:hover {
     background-color: #45a049;
 }
 
 /* 共通のボタンスタイル */
 button.action-btn {
-    width: 150px;  /* ボタンの幅を固定 */
+    width: 80px;  /* ボタンの幅を固定 */
+    min-width: 80px;
     height: 50px;  /* ボタンの高さを固定 */
     font-size: 16px;  /* フォントサイズを設定 */
     margin: 5px;  /* ボタン間のスペース */
@@ -80,4 +82,7 @@ button.action-btn:hover {
     font-size: 14px;      /* メッセージのフォントサイズ */
     color: #555;          /* メッセージの文字色 */
     margin-left: 10px;    /* メッセージとボタンの間に隙間 */
+    white-space: normal;  /* 長いメッセージは改行 */
+    word-break: break-word;
+    flex: 1;
 }
